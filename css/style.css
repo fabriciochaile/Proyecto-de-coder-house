@@ -1,0 +1,482 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+label{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+a{
+    text-decoration: none;
+    color:transparent;
+}
+
+ul li{
+    list-style:none;
+}
+
+section{
+    background-image: url(../media/fond.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body{
+    background-image: url(../media/fondo1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* FOOTER */
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width:100%;
+}
+
+.footer2{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-right: 50px;
+    align-items: center;
+}
+
+.footer1{
+    width: 50vw;
+}
+
+.footer1 ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 5vw;
+    font-size: 15px;
+    padding-top: 35px;
+    color: white;
+}
+
+.footer1 ul li {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.img-footer{
+    height: 50px;
+    width: 50px;
+    margin-top: 26px;
+    border-radius: 80px;
+    border: outset;
+    border-color: rgb(194, 175, 175);
+    margin-left: 4vw;
+}
+
+/* footer desktop */
+
+@media (min-width:1024px){
+    .footer2{
+        flex-direction: row;
+        justify-content: start;
+    }
+}
+
+/* index mobile */
+
+header{
+    background-color: rgba(3, 3, 3, 0.932);
+    height: 14vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: outset;
+    border-color:white ;
+    border-width: 5px;
+    border-radius: 10px;
+}
+
+.logo{
+   
+    width: 87%;
+    height: 11vh;
+    border-radius: 100px;
+    border: outset;
+    border-color: white;
+}
+
+.main-index{
+    height: 86vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 9vh;
+}
+
+li a{
+    color: rgb(253, 253, 252);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 15px;
+    font-size: 1.5rem;
+}
+
+.main-index ul li{
+    border-radius: 10px;
+    background-color: black;
+    height: 70px;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero{
+    display:none;
+}
+
+/* Index desktop */
+
+@media (min-width:1024px) {
+    .main-index{
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    main ul{
+        flex-direction: row;
+        background-color: rgb(0, 0, 0);
+        width: 100%;
+        height: 90px;
+        align-items: center;
+        padding: 5px;
+        border-top: outset;
+        border-bottom: outset;
+        border-color: aliceblue;
+    }
+
+    li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        padding-top: 5px;
+    }
+
+    li :hover{
+        background-color: rgba(255, 255, 255, 0.795);
+        color: black;
+        border: outset;
+        border-color: black;
+        transition-duration: 0.5s;
+        border-radius: 10px;
+    }
+
+    li a{
+        font-size: 25px;
+        width: 100%;
+        padding-top: 10px;
+    }
+
+    .hero{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 180px;
+        color: aliceblue;
+        width: 390px;
+        margin-top: 130px;
+        background-color:  rgba(0, 0, 0, 0.829);
+        border: outset;
+        border-color: black;
+        border-radius: 20px;
+        font-size: 18px;
+    }
+
+    header {
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+    }
+
+    .logo{
+        width: 90%;
+        height: 12vh;
+    }
+}
+
+/* CONTACTO MOBILE*/
+
+form {
+    padding: 20px 10px;
+    height: 450px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: black;
+    border-radius: 10px;
+    border:ridge;
+    border-color: rgb(0, 0, 0);
+    margin:60px;
+    background-image: url(../media/fondocontacto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-width: 5px ;
+}
+
+button{
+    border-radius: 5px;
+    border:solid;
+    height: 30px;
+    width:100%
+}
+
+input{
+    height: 30px;
+    border-radius: 5px;
+    border: solid;
+    padding: 3px;
+    border-width: 3px;
+    width:100%
+}
+
+textarea{
+    padding: 3px;
+    border: solid;
+    border-width: 3px;
+    width: 60vw;
+
+}
+
+.titulo-contacto{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border:outset;
+    border-right: none;
+    border-left: none;
+    border-color: white;
+    color: white;
+    height: 10vh;
+    width: 100vw;
+    font-size: 1.6rem;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 380px;
+}
+
+.imagen-enviar{
+    color: aliceblue;
+    width: 22.5%;
+    height: 7vh;
+    text-align: center;
+    border-radius: 10px;
+    border: outset;
+    border-color: rgb(0, 0, 0);
+    border-width: 5px;
+}
+
+input{
+    width: 100%;
+}
+
+.formulario1{
+    align-items: center;
+    height: 360px;
+}
+
+/* CONTACTO DESKTOP */
+
+@media (min-width:1024px) {
+    .main-contacto{
+        height: 26vh;
+    }
+
+    .imagen-enviar{
+        display: none;
+    }
+
+    form{
+        margin-top: 5%;
+        flex-direction: row;
+    }
+
+    .titulo-contacto{
+        height: 12vh;
+    }
+    
+    .formulario1{
+        margin-bottom: 10px;
+    }
+
+    .formulario2{
+        margin-left: 8px;
+        justify-content: center;
+        margin-bottom: 10px;
+        padding-top: 28px;
+    }
+
+    .enviar{
+        width:10vw;
+    }
+
+    .enviar:hover{
+        background-color: rgba(75, 160, 160, 0.918);
+    }
+
+    .email{
+        width: 100%;
+    }
+
+    input{
+        height: 37px;
+    }
+
+    .formulario{
+        text-align: center;
+    }
+
+    textarea{
+        margin-bottom: 10px;
+    }
+}
+
+/* NOSOTROS  */
+
+.subtitulo-nosotros{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    height: 70px;
+    color: white;
+}
+
+.seccion-nosotros{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    height: 1000px;
+    padding: 10px;
+}
+
+.imagen-personal{
+    border-radius: 150px;
+    height: 240px;
+    width: 230px;
+    padding: 10px;
+    margin: 0px;
+    background-color: black;
+}
+
+
+.tarjeta-personal{
+    height: 480px;
+    padding-top: 7px;
+    background-color: rgba(255, 255, 255, 0.932);
+    color: rgb(0, 0, 0);
+    width:300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin: 4%;
+}
+
+.tarjeta-medio{
+    background-color: black;
+    color: white;
+}
+
+.parrafo-tarjeta{
+    padding: 40px;
+    padding-top: 5px;
+    text-align: center;
+    padding-bottom: 0px;
+}
+
+.tarjeta-productos{
+    height: 400px;
+}
+
+.imagen-producto{
+    border-radius: 10px;
+}
+
+.nombre-personal{
+    text-align: center;
+    margin: 5px;  
+}
+
+.parrafo-nosotros{
+    margin:0;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 10px;
+}
+
+/* catalogo mobile*/
+
+.oferta{
+    width:100%;
+    height: 200px;
+    background-size: contain;
+    height: 80px;
+    display: block;
+
+}
+
+/* sucursal mobile */
+
+.mapa{
+    width: 100vw;
+    height: 20%;
+}
+
+.mapa iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.titulo-sucursal{
+    font-size: 1.2rem;
+}
+
+.parrafo-sucursal{
+    background-color: black;
+    height: 100px;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border: outset;
+    border-color: white;
+}
